@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 import { shoes, statistics } from "../constants";
-import { Button, ShoeCard } from "../components"
+import { Button, ShoeCard } from "../components";
 import { bigShoe1 } from "../assets/images";
 import { arrowRight } from "../assets/icons";
 
@@ -30,7 +30,7 @@ const Hero = () => {
           your active life.
         </p>
 
-        <Button label='Shop now' iconUrl={arrowRight} />
+        <Button label='Shop now' iconURL={arrowRight} />
 
         <div className='flex justify-start items-start flex-wrap w-full mt-20 gap-16'>
           {statistics.map((stat, index) => (
@@ -58,7 +58,7 @@ const Hero = () => {
             <div key={index}>
               <ShoeCard
                 index={index}
-                imgURL={image.thumbnail}
+                imgURL={image}
                 changeBigShoeImage={(shoe) => setBigShoeImg(shoe)}
                 bigShoeImg={bigShoeImg}
               />
